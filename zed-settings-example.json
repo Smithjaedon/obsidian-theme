@@ -1,0 +1,203 @@
+{
+  "icon_theme": "Soft Charmed Icons",
+  "cli_default_open_behavior": "existing_window",
+  "edit_predictions": {
+    "mode": "eager",
+    "provider": "copilot",
+    "copilot": {
+      "enable_next_edit_suggestions": true
+    }
+  },
+  "agent_servers": {
+    "opencode": {
+      "default_config_options": {
+        "effort": "max",
+        "model": "opencode-go/deepseek-v4-flash"
+      },
+      "type": "registry",
+      "favorite_config_option_values": {
+        "mode": ["plan"]
+      }
+    },
+    "github-copilot-cli": {
+      "type": "registry"
+    }
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "custom",
+      "model": "deepseek-chat"
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+    "custom_providers": [
+      {
+        "id": "custom",
+        "label": "DeepSeek",
+        "base_url": "https://api.deepseek.com/v1",
+        "api_key": "{env:DEEPSEEK_API_KEY}"
+      }
+    ]
+  },
+  "context_servers": {
+    "mcp-server-github": {
+      "settings": {},
+      "enabled": false
+    }
+  },
+  "terminal": {
+    "env": {
+      "PATH": "/Users/jaedonsmith/.local/bin:/usr/local/bin:/usr/bin:/bin"
+    },
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv", ".env", "env"],
+        "activate_script": "default"
+      }
+    }
+  },
+  "base_keymap": "VSCode",
+  "theme": "Obsidian Dark",
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16,
+  "project_panel": {
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "scrollbar": {
+      "show": "never"
+    },
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+  "autosave": "on_focus_change",
+  "linked_edits": true,
+  "status_bar": {
+    "line_endings_button": false
+  },
+  "show_whitespaces": "selection",
+  "soft_wrap": "editor_width",
+  "tab_bar": {
+    "show": false
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "gutter": {
+    "folds": false,
+    "runnables": false,
+    "min_line_number_digits": 2
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "tab_size": 2,
+  "remove_trailing_whitespace_on_save": true,
+  "ensure_final_newline_on_save": true,
+  "formatter": {
+    "external": {
+      "command": "npx",
+      "arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
+    }
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "file_types": {
+    "Jinja2": ["html"]
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "ruff" } }],
+      "tab_size": 4
+    },
+    "Go": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "gofumpt",
+          "arguments": ["{buffer_path}"]
+        }
+      },
+      "tab_size": 4
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JSX": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "HTML": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "CSS": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "Markdown": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "YAML": {
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "Rust": {
+      "format_on_save": "on",
+      "formatter": [],
+      "tab_size": 4
+    },
+    "Java": {
+      "format_on_save": "on",
+      "formatter": [],
+      "tab_size": 4
+    },
+    "Svelte": {
+      "format_on_save": "on",
+      "formatter": [],
+      "tab_size": 2
+    }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python": {
+          "venvPath": ".",
+          "venv": ".venv"
+        }
+      }
+    },
+    "ruff": {
+      "settings": {
+        "format": {
+          "enable": true
+        }
+      }
+    }
+  }
+}
