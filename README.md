@@ -2,7 +2,7 @@
 
 A minimal dark theme for [Zed](https://zed.dev) and [VS Code](https://code.visualstudio.com).
 
-Grayscale UI with zero saturation — no colored panels, tabs, or chrome. Syntax colors are clean and muted for readability without distraction.
+Grayscale UI with zero saturation, no colored panels or chrome. Muted syntax colors for readability without distraction.
 
 ## Preview
 
@@ -36,7 +36,3 @@ Grayscale UI with zero saturation — no colored panels, tabs, or chrome. Syntax
 | Numbers | `#bf956a` |
 | Properties | `#d07277` |
 | Constants | `#dfc184` |
-
-## Repository
-
-https://github.com/Smithjaedon/obsidian-theme
